@@ -22,6 +22,8 @@ On normal mode (press ESC to enter normal mode):
 - yy - copy current line
 - p - paste copied text
 - dd - cut the current line
+- o - adds a line under the current line
+- A - moves cursor to the end of line and enter in insert mode
 - CTLR + a - Increments number under the cursor
 - CTRL + x - decrements number under the cursor
 - CTRL + ww - moves cursor to the next window
@@ -32,6 +34,8 @@ On normal mode (press ESC to enter normal mode):
  - j - down
  - l - right
  - h - left
+ - w - moves cursor one word forward
+ - b - moves cursos one word back
 
      In this navigation mode we can use, for example, 3k to go 3 rows up, it can be any number, and the same works with the other navigation keys.
 
@@ -39,7 +43,7 @@ On normal mode (press ESC to enter normal mode):
 
  - CTRL + n - opens files tree
  - CTRL + t - toggles between file and tree
- - SHIFT + i - shows hidden files in NERDTree
+ - SHIFT + i - shows hidden files (.file) in NERDTree
 
 # Vim-surround commands
 
