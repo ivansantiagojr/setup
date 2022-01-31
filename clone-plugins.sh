@@ -43,5 +43,5 @@ sudo apt dist-upgrade &&
 sudo apt autoclean &&
 sudo apt autoremove -y
 
-echo "Agora só colocar escrever tudo no arquivo .vimrc e rodar o comando :PluginInstall dentro do vim. Happy conding!"
+echo "Agora só colocar tudo no arquivo .vimrc e rodar o comando :PluginInstall dentro do vim. Happy conding!"
 
