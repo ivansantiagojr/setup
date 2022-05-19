@@ -4,6 +4,7 @@ set autoindent
 set mouse=a
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 set clipboard=unnamed
+set noswapfile
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
@@ -30,7 +31,7 @@ call vundle#begin()
   Plugin 'peitalin/vim-jsx-typescript'
   Plugin 'styled-components/vim-styled-components'
   Plugin 'jparise/vim-graphql'
-  Plugin 'morhetz/gruvbox'
+  Plugin 'morhetz/gruvbox' 
 
 call vundle#end()       
 
