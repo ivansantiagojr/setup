@@ -1,5 +1,0 @@
--- local vim_airline = require 'vim-airline'
-
-vim.g['airline#extensions#tabline#enabled'] = 1
-vim.g['irline_powerline_fonts'] = 1
-vim.g['airline_theme'] = 'gruvbox'
