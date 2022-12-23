@@ -1,4 +1,3 @@
-require 'globals.options'
-require 'globals.remaps'
-
-require 'packer-plugins'
+require("ivan.remaps")
+require("ivan.options")
+require("ivan")
