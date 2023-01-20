@@ -32,3 +32,4 @@ vim.opt.listchars = {  -- see hidden chars and their colors
 }
 vim.o.list = true
 vim.o.updatetime = 100
+vim.o.autoread = true
