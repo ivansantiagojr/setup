@@ -37,19 +37,4 @@ On normal mode (press ESC to enter normal mode):
  - w - moves cursor one word forward
  - b - moves cursos one word back
 
-     In this navigation mode we can use, for example, 3k to go 3 rows up, it can be any number, and the same works with the other navigation keys.
-
-# NERDTree commands
-
- - CTRL + n - opens files tree
- - CTRL + t - toggles between file and tree
- - SHIFT + i - shows hidden files (.file) in NERDTree
-
-# Vim-surround commands
-
- - ysw) to surround with ()
-
-# Vim commentary commands
-
-    When a text is selected in visual mode, the command "gc" will comment the text
-
+In this navigation mode we can use, for example, 3k to go 3 rows up, it can be any number, and the same works with the other navigation keys.
