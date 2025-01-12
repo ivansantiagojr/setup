@@ -8,7 +8,7 @@ vim.o.errorbells = false -- ding ding!
 vim.o.wrap = false -- don't wrap long lines
 vim.o.swapfile = false -- don't need no swap files!
 vim.o.backup = false  -- ... or a backup!
-vim.o.undodir = "~/.nvim/undodir"  -- sets where undo files land
+--vim.o.undodir = "~/.nvim/undodir"  -- sets where undo files land
 vim.o.scrolloff = 8  -- scroll offwidth so it's not the very bottom
 vim.o.colorcolumn = "80"  -- bar at 80 chars width
 vim.o.signcolumn = "auto:1" -- always set the far left bar/column
@@ -33,3 +33,5 @@ vim.opt.listchars = {  -- see hidden chars and their colors
 vim.o.list = true
 vim.o.updatetime = 100
 vim.o.autoread = true
+
+vim.o.clipboard = "unnamedplus"
