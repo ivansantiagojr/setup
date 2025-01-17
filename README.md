@@ -1,5 +1,7 @@
-# My vimrc file
+# My dotfiles
+Mainly bash, neovim and tmux.
 
+## Some notes from when I started learning vim. Sometimes, they are still useful:)
 Since I'm learning more about Vim, I decided to share the configs I have been using.
 
 Here's a list of useful Vim commands:
