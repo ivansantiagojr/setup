@@ -1,0 +1,3 @@
+# ignoring symlink marker
+dotfiles/nvim/nvim
+
