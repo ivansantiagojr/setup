@@ -1,7 +1,7 @@
 [pager]
-	branch = false
+    branch = false
 [user]
-	name = Ivan Santiago
-	email = ivansantiago.junior@gmail.com
+    name = ivansantiagojr 
+    email = ivansantiago.junior@gmail.com
 [init]
-	defaultBranch = main
+    defaultBranch = main
