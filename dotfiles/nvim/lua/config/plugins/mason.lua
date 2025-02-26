@@ -6,7 +6,7 @@ return {
     config = function()
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "zls", "pyright", "clangd", "bashls" },
+            ensure_installed = { "lua_ls", "zls", "basedpyright", "clangd", "bashls" },
             automatic_installation = true,
         })
         local capabilities = require('blink.cmp').get_lsp_capabilities()
