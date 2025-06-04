@@ -1,7 +1,17 @@
 [pager]
     branch = false
+
 [user]
-    name = ivansantiagojr 
-    email = ivansantiago.junior@gmail.com
+    name = ivansantiagonan
+    email = ivan.santiago@nan.systems
+[includeIf "gitdir:~/Documents/nan/simplefractal/"]
+    path = ~/.gitconfig_simplefractal
+
 [init]
     defaultBranch = main
+
+[core]
+    editor = nvim
+    sshCommand = ssh -i ~/.ssh/id_ed25519
+[includeIf "gitdir:~/Documents/nan/simplefractal/"]
+    path = ~/.gitconfig_simplefractal
