@@ -15,3 +15,6 @@
     sshCommand = ssh -i ~/.ssh/id_ed25519
 [includeIf "gitdir:~/Documents/nan/simplefractal/"]
     path = ~/.gitconfig_simplefractal
+
+[fetch]
+	prune = true
