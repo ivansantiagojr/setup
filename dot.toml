@@ -1,0 +1,10 @@
+[dot]
+dotpath = 'dotfiles'
+
+[dotfiles]
+files = [
+    { source = '.gitconfig', destination = '/home/ivan/.gitconfig' },
+    { source = 'nvim', destination = '~/.config/nvim' },
+    { source = '.clang-format', destination = '~/.clang-format' },
+    { source = '.tmux.conf', destination = '~/.tmux.conf' }
+]
