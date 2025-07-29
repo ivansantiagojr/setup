@@ -2,19 +2,23 @@
     branch = false
 
 [user]
-    name = ivansantiagonan
-    email = ivan.santiago@nan.systems
+    name = ivansantiagojr
+    email = ivansantiago.junior@gmail.com
 [includeIf "gitdir:~/Documents/nan/simplefractal/"]
     path = ~/.gitconfig_simplefractal
+[includeIf "gitdir:~/Documents/nan/"]
+    path = ~/.gitconfig_nan
 
 [init]
     defaultBranch = main
 
 [core]
     editor = nvim
-    sshCommand = ssh -i ~/.ssh/id_ed25519
+    sshCommand = ssh -i ~/.ssh/personal_key
 [includeIf "gitdir:~/Documents/nan/simplefractal/"]
     path = ~/.gitconfig_simplefractal
+[includeIf "gitdir:~/Documents/personal_git/"]
+    path = ~/.gitconfig_personal
 
 [fetch]
-	prune = true
+    prune = true
