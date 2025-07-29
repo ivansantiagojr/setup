@@ -17,8 +17,8 @@
     sshCommand = ssh -i ~/.ssh/personal_key
 [includeIf "gitdir:~/Documents/nan/simplefractal/"]
     path = ~/.gitconfig_simplefractal
-[includeIf "gitdir:~/Documents/personal_git/"]
-    path = ~/.gitconfig_personal
+[includeIf "gitdir:~/Documents/nan/"]
+    path = ~/.gitconfig_nan
 
 [fetch]
     prune = true
