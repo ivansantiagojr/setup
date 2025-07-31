@@ -1,0 +1,6 @@
+[user]
+    name = ivansantiagojr 
+    email = isantiago@simplefractal.com
+
+[core]
+  sshCommand = ssh -i ~/.ssh/simplefractal
