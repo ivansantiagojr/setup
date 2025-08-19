@@ -1,0 +1,6 @@
+[user]
+    name = ivansantiagonan
+    email = ivan.santiago@nan.systems
+
+[core]
+  sshCommand = ssh -i ~/.ssh/nan
