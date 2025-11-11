@@ -24,3 +24,12 @@
         name: neovim
         state: present
 
+    - name: xclip
+      package:
+        name: xclip
+        state: present
+
+    - name: Steam # very important
+      package:
+        name: steam
+        state: present
