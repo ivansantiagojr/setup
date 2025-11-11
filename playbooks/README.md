@@ -18,6 +18,12 @@ git clone https://github.com/ivansantiagojr/setup.git
 cd setup
 ```
 
+Install collections:
+
+```bash
+ansible-galaxy collection install -r playbooks/collections/requirements.yml
+```
+
 Run the playbooks
 
 ```bash
