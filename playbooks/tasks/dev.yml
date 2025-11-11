@@ -1,0 +1,36 @@
+---
+- name: Generic dev tools
+  hosts: localhost
+
+
+  tasks:
+    # Mason uses npm to install some LSPs
+    - name: nvm and node.js installation
+      shell: |
+        # Download and install nvm:
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+        # in lieu of restarting the shell
+        \. "$HOME/.nvm/nvm.sh"
+
+        # Download and install Node.js:
+        nvm install --lts
+
+        # Verify the Node.js version:
+        node -v
+
+        # Verify npm version:
+        npm -v
+
+    - name: Install rust # because I use some rust tools
+      become: yes
+      package:
+        name: rust
+        state: present
+
+    - name: zigup
+      shell: |
+        curl -L https://github.com/marler8997/zigup/releases/latest/download/zigup-x86_64-linux.tar.gz | tar xz
+
+        mv zigup ~/.local/bin/zigup
+
