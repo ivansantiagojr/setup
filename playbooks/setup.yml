@@ -6,3 +6,9 @@
 
 - name: AUR installs
   import_playbook: tasks/aur.yml
+
+- name: Python setup
+  import_playbook: tasks/python.yml
+
+- name: Dev setup
+  import_playbook: tasks/dev.yml
