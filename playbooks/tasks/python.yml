@@ -1,0 +1,32 @@
+---
+- name: My Python dev tools
+  hosts: localhost
+
+  tasks:
+    - name: tk
+      become: yes
+      package:
+        name: tk
+        state: present
+
+    - name: pipx
+      become: yes
+      package:
+        name: python-pipx
+        state: present
+
+    - name: pipx setup
+      become: yes
+      shell: pipx ensurepath
+
+    - name: uv
+      become: yes
+      package:
+        name: uv
+        state: present
+
+    - name: poetry
+      shell: curl -sSL https://install.python-poetry.org | python3 -
+
+    - name: poetry shell plugin
+      shell: poetry self add poetry-plugin-shell
