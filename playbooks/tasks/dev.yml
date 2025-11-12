@@ -34,3 +34,33 @@
 
         mv zigup ~/.local/bin/zigup
 
+    - name: Install Docker
+      become: yes
+      package:
+        name: docker
+        state: present
+
+    - name: Docker for every user
+      become: yes
+      group:
+        name: docker
+
+    - name: Add my user to docker group
+      become: yes
+      user:
+        name: "{{ lookup('ansible.builtin.env', 'USER') }}"
+        group: docker
+
+    - name: Start containerd
+      become: yes
+      systemd:
+        name: containerd
+        enabled: true
+        state: started
+
+    - name: Start docker
+      become: yes
+      systemd:
+        name: docker
+        enabled: true
+        state: started
