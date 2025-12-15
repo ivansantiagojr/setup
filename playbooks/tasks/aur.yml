@@ -55,3 +55,11 @@
         makepkg -si --noconfirm
       become: yes
       become_user: aur_builder
+
+    - name: Install OnlyOffice
+      kewlfft.aur.aur:
+        use: paru
+        name: onlyoffice-bin
+        state: present
+      become: yes
+      become_user: aur_builder
