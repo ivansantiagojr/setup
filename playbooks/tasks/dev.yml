@@ -64,3 +64,9 @@
         name: docker
         enabled: true
         state: started
+
+    - name: Install Docker compose
+      become: yes
+      package:
+        name: docker-compose
+        state: present
