@@ -28,11 +28,11 @@ return {
 
             -- diagnostics
             vim.keymap.set('n', '<leader>vd', vim.diagnostic.open_float)
-            vim.keymap.set('n', '<leader>[d', function()
-                vim.diagnostic.jump({ count = 1, float = true })
-            end)
-            vim.keymap.set('n', '<leader>]d', function()
+            vim.keymap.set('n', '[d', function()
                 vim.diagnostic.jump({ count = -1, float = true })
+            end)
+            vim.keymap.set('n', ']d', function()
+                vim.diagnostic.jump({ count = 1, float = true })
             end)
         end,
     }
