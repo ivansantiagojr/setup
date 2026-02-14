@@ -8,6 +8,7 @@ vim.o.errorbells = false          -- ding ding!
 vim.o.wrap = true                 -- wrap long lines
 vim.o.swapfile = false            -- don't need no swap files!
 vim.o.backup = false              -- ... or a backup!
+vim.o.undofile = true
 vim.o.undodir = "~/.nvim/undodir" -- sets where undo files land
 vim.o.scrolloff = 8               -- scroll offwidth so it's not the very bottom
 vim.o.colorcolumn = "80"          -- bar at 80 chars width
