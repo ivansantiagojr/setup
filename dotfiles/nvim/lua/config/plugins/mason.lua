@@ -6,7 +6,7 @@ return {
     config = function()
         require("mason").setup()
         require("mason-lspconfig").setup({
-            ensure_installed = { "lua_ls", "zls", "ruff", "clangd", "bashls", "basedpyright" },
+            ensure_installed = { "lua_ls", "zls", "ruff", "clangd", "bashls", "basedpyright", "ansiblels", "typos_lsp" },
             automatic_installation = true,
             automatic_enable = true,
         })
