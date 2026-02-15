@@ -24,7 +24,7 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
     spec = {
-        { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+        { "rose-pine/neovim", name = "rose-pine", lazy = false, priority = 1000 },
         -- import your plugins
         { import = "config.plugins" },
     },
